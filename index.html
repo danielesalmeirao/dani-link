@@ -1,78 +1,132 @@
 <!DOCTYPE html>
-display: flex;
-flex-direction: column;
-gap: 14px;
-}
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dani Imóveis | Link in Bio</title>
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
-.link-btn {
-text-decoration: none;
-padding: 16px 18px;
-border-radius: 14px;
-border: 1px solid var(--border);
-background: #fafafa;
-color: var(--text);
-font-size: 0.95rem;
-font-weight: 500;
-text-align: center;
-transition: all 0.25s ease;
-}
+  <style>
+    :root {
+      --bg: #f6f6f4;
+      --card: #ffffff;
+      --text: #1f2933;
+      --muted: #6b7280;
+      --accent: #c8b88a;
+      --border: #e5e7eb;
+    }
 
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', sans-serif;
+    }
 
-.link-btn:hover {
-background: var(--accent);
-color: #111827;
-transform: translateY(-2px);
-box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-}
+    body {
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 24px;
+    }
 
+    .container {
+      width: 100%;
+      max-width: 420px;
+      background: var(--card);
+      border-radius: 20px;
+      padding: 32px 24px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+      display: flex;
+      flex-direction: column;
+      gap: 28px;
+    }
 
-footer {
-border-top: 1px solid var(--border);
-padding-top: 16px;
-text-align: center;
-font-size: 0.8rem;
-color: var(--muted);
-line-height: 1.4;
-}
+    header {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
 
+    header h1 {
+      font-size: 1.6rem;
+      font-weight: 600;
+    }
 
-@media (max-width: 480px) {
-.container {
-padding: 28px 20px;
-}
+    header p {
+      font-size: 0.95rem;
+      color: var(--muted);
+    }
 
+    .location {
+      font-size: 0.85rem;
+      color: var(--accent);
+      font-weight: 500;
+    }
 
-header h1 {
-font-size: 1.45rem;
-}
-}
-</style>
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .link-btn {
+      text-decoration: none;
+      padding: 16px 18px;
+      border-radius: 14px;
+      border: 1px solid var(--border);
+      background: #fafafa;
+      color: var(--text);
+      font-size: 0.95rem;
+      font-weight: 500;
+      text-align: center;
+      transition: all 0.25s ease;
+    }
+
+    .link-btn:hover {
+      background: var(--accent);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    }
+
+    footer {
+      border-top: 1px solid var(--border);
+      padding-top: 16px;
+      text-align: center;
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+  </style>
 </head>
+
 <body>
-<div class="container">
-<header>
-<h1>Dani Imóveis</h1>
-<p>Curadoria de imóveis com design, localização e propósito</p>
-<span class="location">São Paulo</span>
-</header>
+  <div class="container">
+    <header>
+      <h1>Dani Imóveis</h1>
+      <p>Curadoria de imóveis com design, localização e propósito</p>
+      <span class="location">São Paulo</span>
+    </header>
 
+    <section class="links">
+      <a class="link-btn" href="#">🔑 Ver imóveis disponíveis</a>
+      <a class="link-btn" href="#">📲 Falar com Dani no WhatsApp</a>
+      <a class="link-btn" href="#">🏡 Avaliação de imóvel gratuita</a>
+      <a class="link-btn" href="#">💼 Quero vender meu imóvel</a>
+      <a class="link-btn" href="#">📍 Imóveis por bairro</a>
+      <a class="link-btn" href="#">📸 Instagram profissional</a>
+    </section>
 
-<section class="links">
-<!-- Edite apenas os href futuramente -->
-<a class="link-btn" href="#">🔑 Ver imóveis disponíveis</a>
-<a class="link-btn" href="#">📲 Falar com Dani no WhatsApp</a>
-<a class="link-btn" href="#">🏡 Avaliação de imóvel gratuita</a>
-<a class="link-btn" href="#">💼 Quero vender meu imóvel</a>
-<a class="link-btn" href="#">📍 Imóveis por bairro</a>
-<a class="link-btn" href="#">📸 Instagram profissional</a>
-</section>
-
-
-<footer>
-<p>Dani Imóveis © Todos os direitos reservados</p>
-<p>CRECI: ________</p>
-</footer>
-</div>
+    <footer>
+      <p>Dani Imóveis © Todos os direitos reservados</p>
+      <p>CRECI: ________</p>
+    </footer>
+  </div>
 </body>
 </html>
