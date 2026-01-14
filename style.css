@@ -27,17 +27,8 @@ body {
 
 
 .logo {
-  width: 320px;           /* logo protagonista */
+  width: 400px;           /* logo protagonista */
   display: block;
-  margin: 0 auto 6px;    /* cola o subtítulo no logo */
-}
-
-.subtitle {
-  margin-top: 2px !important;
-  margin-bottom: 0 !important;
-  line-height: 1.1;
-}
-
 
 .location {
   font-size: 12px;
@@ -118,21 +109,7 @@ document.querySelectorAll(".button, a.button, .link-button").forEach(btn => {
   });
 });
 
-.logo-area {
-  margin-bottom: 0 !important;
-  padding-bottom: 0 !important;
-}
 
-.logo {
-  margin-bottom: 4px !important;
-}
 
-.subtitle {
-  margin: 0 !important;
-  padding: 0 !important;
-  line-height: 1.1;
-  font-size: 0.95rem;
-  color: #C9A24D !important; /* dourado fixo */
-  text-align: center;
-}
+
 
