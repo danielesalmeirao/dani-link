@@ -12,32 +12,32 @@ body {
 
 .container {
   max-width: 420px;
-  margin: 0 auto;
-  padding: 40px 20px;
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
   text-align: center;
 }
 
 /* LOGO */
-.logo-area {
-  margin-bottom: 14px; /* ajuste premium, sem espaço sobrando */
-  text-align: center;
+.logo {
+  margin-bottom: 6px !important;
+  display: block;
 }
 
 
+
 .logo {
-  width: 220px;           /* logo protagonista */
+  width: 320px;           /* logo protagonista */
   display: block;
   margin: 0 auto 6px;    /* cola o subtítulo no logo */
 }
 
-
 .subtitle {
-  font-size: 15px;
-  color: #C9A24D;
-  margin-bottom: 0px;
-  line-height: 1.4;
-  text-align: center;
+  margin-top: 2px !important;
+  margin-bottom: 0 !important;
+  line-height: 1.1;
 }
+
 
 .location {
   font-size: 12px;
