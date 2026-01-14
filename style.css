@@ -23,7 +23,7 @@ body {
 }
 
 .logo {
-  width: 220px;      /* 🔥 AQUI CONTROLA O TAMANHO DO LOGO */
+  width: 300px;      /* 🔥 AQUI CONTROLA O TAMANHO DO LOGO */
   max-width: 90%;
   margin-bottom: 10px;
 }
